@@ -37,6 +37,7 @@
 
 .about__author{
     display: flex;
+    justify-content: space-between;
     max-height: 940px;
 }
 
@@ -48,9 +49,9 @@
 }
 
 .author__prof{
+    padding-top: 40px;
+    padding-right: 100px;
     margin: 0px;
-    padding-top: 50px;
-    padding-left: 200px;
     font-size: 18px;
     line-height: 22px;
 }
@@ -64,7 +65,7 @@
 
 .info{
     max-width: 100%;
-    height: 500px;
+    height: auto;
     background-color: #F6F6F6;
 }
 
@@ -87,6 +88,30 @@
 
 .btn{
     margin-top: 20px;
+  margin-bottom: 20px;  
+}
+
+.popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  display: none;
+}
+
+.popup.popup_is-opened {
+  display: flex;  
+}
+
+.close__cross{
+  position: absolute!important;
+  top: 0!important;
+  right: 0!important;
 }
 
 .skills{
@@ -95,14 +120,56 @@
 
 .skills__title{
     margin: 0px;
-    padding-top: 100px;
+    padding-top: 80px;
     text-align: center;
+}
+
+.portfolio{
+  width: 100%;
+  height: 700px;
+  background-color: #F6F6F6;
+}
+
+.portfolio__title{
+  margin: 0px;
+  padding-top: 80px;
+  text-align: center;
+  font-size: 34px;
+  line-height: 42px;
 }
 
 .footer{
-    height: 600px;
+    height: 200px;
 }
 
 .footer__title{
+    margin: 0px;
+    padding-top: 40px;
     text-align: center;
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.footer__subtitle{
+    margin: 0px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+}
+.img__container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    max-width: 340px;
+}
+
+.icons{
+    max-width: 40px;
+}
+
+.img__link{
+    cursor: pointer;
 }
