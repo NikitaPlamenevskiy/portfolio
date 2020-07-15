@@ -8,7 +8,7 @@
 
 #### Демо сайта: 
 
-https://github.com/NikitaPlamenevskiy/portfolio/
+https://nikitaplamenevskiy.github.io/portfolio/
 
 
 #### Инструкция по установке проекта:
