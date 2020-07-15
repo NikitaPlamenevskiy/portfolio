@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Пламеневский Никита">
+  <meta name="description" content="Портфолио">
+  <title>Plamenevskiy Nikita</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="favicon.png" rel="shortcut icon">
+  <link rel="stylesheet" href="index.4a9c8c7c2bab9f7bac12.css">
+</head>
+
+<body class="main">
+  <section class="header" id="home">
+    <div class="header__menu">
+      <ul class="menu__block shadow-sm p-3 mb-5 bg-white">
+        <li class="menu__list ">
+          <a href="#home" class="text-decoration-none">Home</a>
+        </li>
+        <li class="menu__list">
+          <a href="#about" class="text-decoration-none">About me</a>
+        </li>
+        <li class="menu__list">
+          <a href="#skills" class="text-decoration-none">Skills</a>
+        </li>
+        <li class="menu__list">
+          <a href="#portfolio" class="text-decoration-none">Portoflio</a>
+        </li>
+        <li class="menu__list">
+          <a href="#contacts" class="text-decoration-none">Contacts</a>
+        </li>
+      </ul>
+    </div>
+    <div class="about__author">
+      <h1 class="author__name">Nikita Plamenevskiy</h1>
+      <p class="author__prof">
+        Frontend-developer
+        <br>Faculty of foreign languages (Eng, Fr), TSU 20
+        <br> 22 years old, Tomsk
+      </p>
+    </div>
+    <img src="./images/1.png" class="author__image img-fluid rounded" alt="Responsive image">
+  </section>
+  <section class="info" id="about">
+    <h2 class="info__title">About me</h2>
+    <p class="info__subtitle">
+      Привет! Меня зовут Никита, я frontend разработчик из Томска.
+      <br> Я очень увлечен веб разработкой и всем, что связано с ней.
+      <br>
+      <br> Прошел обучение в "Школе анализа данных" по программе повышения квалификации "Профессия фронтенд-разработчика" в объеме 280 часов.
+      <br>
+      <br> В данный момент нахожусь в поисках работы и получения опыта в web-разработке.
+    </p>
+    <div class="text-center">
+      <button class="button__serteficate btn btn-secondary btn-lg">Сертификат</button>
+    </div>
+    <div class="popup">
+      <img src="./images/2.png" class="popup__serteficate img-fluid">
+      <button type="button" class="close close__cross" aria-label="Close">
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.146-3.146a.5.5 0 0 0-.708-.708L8 7.293 4.854 4.146a.5.5 0 1 0-.708.708L7.293 8l-3.147 3.146a.5.5 0 0 0 .708.708L8 8.707l3.146 3.147a.5.5 0 0 0 .708-.708L8.707 8l3.147-3.146z" />
+        </svg>
+      </button>
+    </div>
+  </section>
+  <section class="skills" id="skills">
+    <h2 class="skills__title">Skills</h2>
+    <div class="skills__img-container">
+      <img class="skills__img" src="./images/social_html5_html_71.png" alt="html">
+      <img class="skills__img" src="./images/css3-01_icon-icons.com_50918.png" alt="css">
+      <img class="skills__img" src="./images/prog-js01_icon-icons.com_50789.png" alt="js">
+      <img class="skills__img" src="./images/adb-photoshop_icon-icons.com_50960.png" alt="photoshop">
+      <img class="skills__img" src="./images/figma_logo_icon_145280.png" alt="figma">
+    </div>
+    <div class="skills__arrow-container">
+      <img class="skills__arrow" src="./images/angle-arrow-down_icon-icons.com_73683.png" alt="arrow-down">
+    </div>
+    <ul class="skills__list">
+      <li class="list__name">HTML</li>
+      <li class="list__name">CSS(Flex, Grid, Transform, Animate)</li>
+      <li class="list__name">JS</li>
+      <li class="list__name">Знание БЭМ-методологии</li>
+      <li class="list__name">Умение работать с Git</li>
+      <li class="list__name">Умение работать с Webpack</li>
+    </ul>
+  </section>
+  <section class="portfolio" id="portfolio">
+    <h2 class="portfolio__title">Portfolio</h2>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">      
+        <div class="carousel-item active">
+          <a href="https://nikitaplamenevskiy.github.io/diplom/" target="_blank">
+           <img src="./images/newsanalyzer.png" class="potfolio__img d-block" alt="newsanalyzer">
+          </a>  
+        </div>      
+        <div class="carousel-item">
+          <a href="https://nikitaplamenevskiy.github.io/sprint11/" target="_blank">
+            <img src="./images/mesto.png" class="potfolio__img potfolio__img d-block" alt="mesto">
+          </a>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    </div>
+  </section>
+  <footer class="footer" id="contacts">
+    <h2 class="footer__title">Contacts</h2>
+    <p class="footer__subtitle">Хотите узнать больше или просто пообщаться?
+      <br>
+      <br>Пишите!</p>
+    <div class="img__container">
+      <a href="https://github.com/NikitaPlamenevskiy" class="img__link" target="_blank"><img src="./images/github-logo_icon-icons.com_73546.png" class="icons" alt="github"></a>
+      <a href="https://www.instagram.com/nick__plamenevski/" class="img__link" target="_blank"><img src="./images/Instagram_New_icon-icons.com_69008.png" class="icons" alt="instagram"></a>
+      <a href="https://vk.com/nikita_plamenevsky" class="img__link" target="_blank"><img src="./images/rus-vk-01_icon-icons.com_50759.png" class="icons" alt="vk"></a>
+      <a href="https://www.linkedin.com/in/nikita-plamenevskiy-816a9b1a7/" class="img__link" target="_blank"><img src="./images/sociallinkedin_member_70.png" class="icons" alt="linkedin"></a>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="main.f57eb034c0c5de9a6e2d.js"></script>
+</body>
