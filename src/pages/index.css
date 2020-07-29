@@ -207,7 +207,6 @@
 .skills__arrow-container{
   max-width: 400px;
   margin: 0 auto;
-  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -258,7 +257,21 @@
 }
 
 .carousel-control-next-icon{
-  opacity: 1;
+  filter: invert(100%);
+}
+
+.carousel-control-next{
+  width: 100px;
+  margin-right: 150px;
+}
+
+.carousel-control-prev-icon{
+  filter: invert(100%);
+}
+
+.carousel-control-prev{
+  width: 100px;
+  margin-left: 150px;
 }
 
 .footer{
