@@ -58,12 +58,14 @@
       <button class="button__serteficate btn btn-secondary btn-lg">Сертификат</button>
     </div>
     <div class="popup">
-      <img src="<%=require('./images/2.png')%>" class="popup__serteficate img-fluid">
-      <button type="button" class="close close__cross" aria-label="Close">
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.146-3.146a.5.5 0 0 0-.708-.708L8 7.293 4.854 4.146a.5.5 0 1 0-.708.708L7.293 8l-3.147 3.146a.5.5 0 0 0 .708.708L8 8.707l3.146 3.147a.5.5 0 0 0 .708-.708L8.707 8l3.147-3.146z" />
-        </svg>
-      </button>
+      <div class="popup__container">
+        <img src="<%=require('./images/2.png')%>" class="popup__serteficate img-fluid">
+        <button type="button" class="close close__cross" aria-label="Close">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.146-3.146a.5.5 0 0 0-.708-.708L8 7.293 4.854 4.146a.5.5 0 1 0-.708.708L7.293 8l-3.147 3.146a.5.5 0 0 0 .708.708L8 8.707l3.146 3.147a.5.5 0 0 0 .708-.708L8.707 8l3.147-3.146z" />
+          </svg>
+        </button>
+      </div>
     </div>
   </section>
   <section class="skills" id="skills">
@@ -72,8 +74,9 @@
       <img class="skills__img" src="<%=require('./images/social_html5_html_71.png')%>" alt="html">
       <img class="skills__img" src="<%=require('./images/css3-01_icon-icons.com_50918.png')%>" alt="css">
       <img class="skills__img" src="<%=require('./images/prog-js01_icon-icons.com_50789.png')%>" alt="js">
-      <img class="skills__img" src="<%=require('./images/adb-photoshop_icon-icons.com_50960.png')%>" alt="photoshop">
+      <img class="skills__img" src="<%=require('./images/adb-photoshop_icon-icons.com_50960.png')%>" alt="photoshop">      
       <img class="skills__img" src="<%=require('./images/figma_logo_icon_145280.png')%>" alt="figma">
+      <img class="skills__img" src="<%=require('./images/webpack_logo_icon_144745.png')%>" alt="webpack">
     </div>
     <div class="skills__arrow-container">
       <img class="skills__arrow" src="<%=require('./images/angle-arrow-down_icon-icons.com_73683.png')%>" alt="arrow-down">
