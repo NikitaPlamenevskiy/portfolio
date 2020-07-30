@@ -10,13 +10,13 @@
   <title>Plamenevskiy Nikita</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="favicon.png" rel="shortcut icon">
-  <link rel="stylesheet" href="index.1c3104bb0644ee8a233e.css">
+  <link rel="stylesheet" href="index.ef4f689f9bafc9f695cc.css">
 </head>
 
 <body class="main">
-  <section class="header" id="home">
+  <section class="header pt-3" id="home" >
     <div class="header__menu">
-      <ul class="menu__block shadow-sm p-3 mb-5 bg-white">
+      <ul class="menu__block shadow-lg p-1 mb-5 bg-white">
         <li class="menu__list ">
           <a href="#home" class="text-decoration-none">Home</a>
         </li>
@@ -34,16 +34,20 @@
         </li>
       </ul>
     </div>
-    <div class="about__author">
-      <h1 class="author__name">Nikita Plamenevskiy</h1>
-      <p class="author__prof">
+  </section>
+
+  <section class="author">
+    <div class="author__info">
+      <h1 class="author__name text-left p-3 m-0">Nikita <br> Plamenevskiy</h1>
+      <p class="author__prof w-50 p-3">
         Frontend-developer
         <br>Faculty of foreign languages (Eng, Fr), TSU 20
         <br> 22 years old, Tomsk
       </p>
     </div>
     <img src="./images/1.png" class="author__image img-fluid rounded" alt="Responsive image">
-  </section>
+  </section>    
+  
   <section class="info" id="about">
     <h2 class="info__title">About me</h2>
     <p class="info__subtitle">
@@ -58,12 +62,14 @@
       <button class="button__serteficate btn btn-secondary btn-lg">Сертификат</button>
     </div>
     <div class="popup">
-      <img src="./images/2.png" class="popup__serteficate img-fluid">
-      <button type="button" class="close close__cross" aria-label="Close">
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.146-3.146a.5.5 0 0 0-.708-.708L8 7.293 4.854 4.146a.5.5 0 1 0-.708.708L7.293 8l-3.147 3.146a.5.5 0 0 0 .708.708L8 8.707l3.146 3.147a.5.5 0 0 0 .708-.708L8.707 8l3.147-3.146z" />
-        </svg>
-      </button>
+      <div class="popup__container">
+        <img src="./images/2.png" class="popup__serteficate img-fluid">
+        <button type="button" class="close close__cross" aria-label="Close">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.146-3.146a.5.5 0 0 0-.708-.708L8 7.293 4.854 4.146a.5.5 0 1 0-.708.708L7.293 8l-3.147 3.146a.5.5 0 0 0 .708.708L8 8.707l3.146 3.147a.5.5 0 0 0 .708-.708L8.707 8l3.147-3.146z" />
+          </svg>
+        </button>
+      </div>
     </div>
   </section>
   <section class="skills" id="skills">
@@ -72,8 +78,9 @@
       <img class="skills__img" src="./images/social_html5_html_71.png" alt="html">
       <img class="skills__img" src="./images/css3-01_icon-icons.com_50918.png" alt="css">
       <img class="skills__img" src="./images/prog-js01_icon-icons.com_50789.png" alt="js">
-      <img class="skills__img" src="./images/adb-photoshop_icon-icons.com_50960.png" alt="photoshop">
+      <img class="skills__img" src="./images/adb-photoshop_icon-icons.com_50960.png" alt="photoshop">      
       <img class="skills__img" src="./images/figma_logo_icon_145280.png" alt="figma">
+      <img class="skills__img" src="./images/webpack_logo_icon_144745.png" alt="webpack">
     </div>
     <div class="skills__arrow-container">
       <img class="skills__arrow" src="./images/angle-arrow-down_icon-icons.com_73683.png" alt="arrow-down">
@@ -87,18 +94,18 @@
       <li class="list__name">Умение работать с Webpack</li>
     </ul>
   </section>
-  <section class="portfolio" id="portfolio">
+  <section class="portfolio pb-5" id="portfolio">
     <h2 class="portfolio__title">Portfolio</h2>
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
     <div class="carousel-inner">      
         <div class="carousel-item active">
           <a href="https://nikitaplamenevskiy.github.io/diplom/" target="_blank">
-           <img src="./images/newsanalyzer.png" class="potfolio__img d-block" alt="newsanalyzer">
+           <img src="./images/newsanalyzer.png" class="potfolio__img d-block img-fluid" alt="newsanalyzer">
           </a>  
         </div>      
         <div class="carousel-item">
           <a href="https://nikitaplamenevskiy.github.io/sprint11/" target="_blank">
-            <img src="./images/mesto.png" class="potfolio__img potfolio__img d-block" alt="mesto">
+            <img src="./images/mesto.png" class="potfolio__img potfolio__img d-block img-fluid" alt="mesto">
           </a>
         </div>
     </div>
