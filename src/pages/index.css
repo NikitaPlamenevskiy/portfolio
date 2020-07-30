@@ -1,6 +1,6 @@
-.main{
-    max-width: 100%;
-}
+@import url(../blocks/header/header.css);
+
+/* Кастом скролла */
 
 ::-webkit-scrollbar{
   max-width:8px;
@@ -10,7 +10,7 @@
   border-width:1px 1px 1px 2px;
   border-color: #828282;
   background-color: #aaa;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
@@ -53,7 +53,12 @@
     transition-duration: 1s;
 }
 
-.about__author{
+.author{
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.author__info{
     display: flex;
     justify-content: space-between;
     max-height: 940px;
