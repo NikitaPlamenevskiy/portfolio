@@ -1,0 +1,10 @@
+.menu__block{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 940px;
+    border-bottom: 1px black solid;
+}

@@ -1,0 +1,17 @@
+.menu__list{
+    list-style-type: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 22px;
+    line-height: 20px;
+}
+
+.text-decoration-none{
+    color: #828282;
+    transition-duration: 0.5s;
+}
+
+.text-decoration-none:hover{
+    color: #000000;
+    transition-duration: 1s;
+}
