@@ -1,0 +1,299 @@
+@import url(../blocks/header/header.css);
+
+/* Кастом скролла */
+
+::-webkit-scrollbar{
+  max-width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+  border-width:1px 1px 1px 2px;
+  border-color: #828282;
+  background-color: #aaa;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  border-width: 1px 1px 1px 2px;
+  border-color: #555;
+  background-color: #777;
+}
+
+.author{
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.author__info{
+    display: flex;
+    justify-content: space-between;
+    max-height: 940px;
+}
+
+.author__name{
+    font-size: 45px;
+    color: #070707;
+}
+
+.author__prof{
+    margin: 0px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.img-fluid{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    max-width: 100%;
+    height: auto;
+}
+
+.info{
+    max-width: 100%;
+    height: auto;
+    background-color: #F6F6F6;
+}
+
+.info__title{
+    margin: 0px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.info__subtitle{
+    max-width: 700px;
+    margin: 0 auto;
+    
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.btn{
+    margin-top: 20px;
+  margin-bottom: 20px;  
+}
+
+.popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  display: none;
+  z-index: 2;
+}
+
+.popup__container{
+  position: relative;
+  max-width: 1200px;
+  height: auto;
+}
+
+.popup.popup_is-opened {
+  display: flex;
+}
+
+.close__cross{
+  position: absolute;
+  right: 20;
+  top: 0;
+}
+
+.skills{
+  height: auto;
+  overflow-y: hidden;
+}
+
+.skills__title{
+    margin: 0px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.skills__img-container{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 660px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  visibility: hidden;
+}
+
+.skills__img-container.active{
+  visibility: visible;
+  animation-name: skills-animation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+.skills__img-container.fade{
+  animation-name: skills-animation-fade;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes skills-animation{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes skills-animation-fade{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.skills__img{
+  width: 110px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: auto;
+}
+
+.skills__arrow-container:hover ~ .skills__list{
+  height: 144px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  animation-name: list-animation;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+}
+
+.skills__list{
+  height: 0px;
+  margin: 0 auto;
+  transition: 1s; 
+  transition-timing-function: linear;
+}
+
+.skills__arrow-container{
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.skills__arrow{
+  max-height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list__name{
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+@keyframes list-animation{
+  0%{
+    opacity: 0;
+    max-height: 0px;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+    max-height: 144px;
+  }
+}
+
+.portfolio{
+  width: 100%;
+  height: auto;
+  background-color: #F6F6F6;
+}
+
+.portfolio__title{
+  margin: 0px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 34px;
+  line-height: 42px;
+}
+
+.potfolio__img{
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.carousel-control-next-icon{
+  filter: invert(100%);
+}
+
+.carousel-control-next{
+  width: 100px;
+  margin-right: 150px;
+}
+
+.carousel-control-prev-icon{
+  filter: invert(100%);
+}
+
+.carousel-control-prev{
+  width: 100px;
+  margin-left: 150px;
+}
+
+.footer{
+    height: 200px;
+}
+
+.footer__title{
+    margin: 0px;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.footer__subtitle{
+    margin: 0px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+}
+.img__container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    max-width: 340px;
+}
+
+.icons{
+    max-width: 40px;
+}
+
+.img__link{
+    cursor: pointer;
+}

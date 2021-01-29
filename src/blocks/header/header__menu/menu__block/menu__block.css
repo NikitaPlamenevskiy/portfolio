@@ -1,0 +1,7 @@
+.menu__block{
+    display: flex;
+    justify-content: space-around;
+
+    max-width: 940px;
+    border-radius: 5px;
+}
